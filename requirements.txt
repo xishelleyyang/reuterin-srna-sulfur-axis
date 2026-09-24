@@ -1,0 +1,20 @@
+# Python dependencies for src/conservation_analysis.py, typhimurium_duplex_mfe.py,
+# build_tables.py, make_figures.py, make_fig5_conservation.py, download_inputs.py,
+# and the tests/. Versions after "==" are what this pipeline's reported numbers were
+# last verified against; ">=" floors are given where any recent release is expected
+# to behave identically.
+#
+# download_inputs.py itself only needs the standard library (urllib, hashlib, json).
+numpy>=1.23
+pandas>=2.0
+scipy>=1.9
+statsmodels>=0.14
+biopython>=1.80
+matplotlib>=3.6
+adjustText>=0.8
+openpyxl>=3.0
+ViennaRNA==2.7.2
+
+# Not required by anything in src/: the public repository's old requirements.txt also
+# pinned seaborn and networkx, but no script in this pipeline imports either -- dropped
+# here rather than carried forward as an unused dependency.
